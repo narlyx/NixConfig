@@ -24,6 +24,7 @@
           ./modules/nixos/shell/default.nix
           ./modules/nixos/users/default.nix
           ./modules/nixos/wm/hyprland/default.nix
+          ./modules/nixos/audio/pipewire/default.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;

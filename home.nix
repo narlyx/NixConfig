@@ -19,6 +19,8 @@
     pkgs.waybar
     pkgs.wofi
 
+    pkgs.librewolf
+
     pkgs.git
     pkgs.gh
   ];
@@ -37,10 +39,7 @@
       recursive = true;
     };
 
-    ".config/thefuck" = {
-      source = ./dotfiles/thefuck;
-      recursive = true;
-    };
+    ".gitconfig".source = ./dotfiles/git/gitconfig;
 
   };
 
