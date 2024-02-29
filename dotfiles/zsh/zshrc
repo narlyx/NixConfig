@@ -1,0 +1,10 @@
+eval "$(zoxide init zsh)"
+eval "$(thefuck --alias)"
+
+alias cd="z"
+alias ls="eza"
+alias tree="eza --tree --ignore-glob='.git'"
+alias cat="bat"
+
+PROMPT="%F{green}%n@%m %F{blue}%~ %F{white}> "
+RPROMPT="%F{green}%t"
