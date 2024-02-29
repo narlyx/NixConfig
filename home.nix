@@ -24,11 +24,24 @@
   ];
 
   home.file = {
+
     ".zshrc".source = ./dotfiles/zsh/zshrc;
+
     ".config/nvim" = {
       source = ./dotfiles/nvim;
       recursive = true;
     };
+
+    ".config/hypr" = {
+      source = ./dotfiles/hypr;
+      recursive = true;
+    };
+
+    ".config/thefuck" = {
+      source = ./dotfiles/thefuck;
+      recursive = true;
+    };
+
   };
 
   home.sessionVariables = {
