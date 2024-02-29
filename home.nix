@@ -41,6 +41,11 @@
 
     ".gitconfig".source = ./dotfiles/git/gitconfig;
 
+    ".config/kitty" = {
+      source = ./dotfiles/kitty;
+      recursive = true;
+    };
+
   };
 
   home.sessionVariables = {
