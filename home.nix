@@ -19,7 +19,6 @@
     pkgs.waybar
     pkgs.wofi
 
-    pkgs.librewolf
     pkgs.pavucontrol
     pkgs.firefox
 
