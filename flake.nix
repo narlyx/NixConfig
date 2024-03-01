@@ -23,6 +23,7 @@
           ./modules/nixos/network/default.nix
           ./modules/nixos/shell/default.nix
           ./modules/nixos/users/default.nix
+          ./modules/nixos/dm/greetd/default.nix
           ./modules/nixos/wm/hyprland/default.nix
           ./modules/nixos/audio/pipewire/default.nix
           home-manager.nixosModules.home-manager
