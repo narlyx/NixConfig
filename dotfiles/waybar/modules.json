@@ -31,6 +31,16 @@
     "on-click": "helvum",
     "scroll-step": 0.2,
     "format-icons": ["", "", ""]
+  },
+
+  "wlr/taskbar": {
+	  "format": "{icon}",
+	  "icon-size": 14,
+	  "icon-theme": "Numix-Circle",
+	  "tooltip-format": "{title}",
+	  "on-click": "activate",
+	  "on-click-middle": "close",
+    "all-outputs": false
   }
 
 }

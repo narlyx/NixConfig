@@ -8,7 +8,8 @@
 
   "modules-left": [
     "custom/appmenu",
-    "hyprland/workspaces"
+    "hyprland/workspaces",
+    "wlr/taskbar"
   ],
 
   "modules-center": [
