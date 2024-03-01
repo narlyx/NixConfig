@@ -14,8 +14,8 @@
     pkgs.thefuck
 
     pkgs.neovim
+    pkgs.vscode
 
-    pkgs.kitty
     pkgs.waybar
     pkgs.wofi
 
@@ -35,10 +35,7 @@
       recursive = true;
     };
 
-    ".config/hypr" = {
-      source = ./dotfiles/hypr;
-      recursive = true;
-    };
+    ".config/hypr/hyprland.conf".source = ./dotfiles/hypr/hyperland.conf;
 
     ".config/waybar" = {
       source = ./dotfiles/waybar;
