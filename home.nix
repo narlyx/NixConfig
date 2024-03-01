@@ -20,6 +20,8 @@
     pkgs.wofi
 
     pkgs.librewolf
+    pkgs.pavucontrol
+    pkgs.firefox
 
     pkgs.git
     pkgs.gh
@@ -36,6 +38,11 @@
 
     ".config/hypr" = {
       source = ./dotfiles/hypr;
+      recursive = true;
+    };
+
+    ".config/waybar" = {
+      source = ./dotfiles/waybar;
       recursive = true;
     };
 
