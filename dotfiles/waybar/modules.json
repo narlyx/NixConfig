@@ -29,7 +29,7 @@
     "format": "{volume}% {icon}",
     "format-muted": "",
     "on-click": "helvum",
-    "scroll-step": 0.2,
+    "scroll-step": 2,
     "format-icons": ["", "", ""]
   },
 
