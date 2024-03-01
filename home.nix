@@ -21,6 +21,8 @@
     pkgs.pavucontrol
     pkgs.firefox
     pkgs.spotify
+    pkgs.bitwarden
+    pkgs.android-studio
 
     pkgs.git
     pkgs.gh
