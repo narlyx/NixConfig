@@ -1,6 +1,9 @@
 {
   "hyprland/workspaces": {
-    "all-outputs": true
+    "on-click": "activate",
+    "active-only": false,
+    "all-outputs": true,
+    "format": "{}"
   },
 
   "hyprland/window": {
@@ -14,6 +17,20 @@
   "clock": {
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "format-alt": "{:%Y-%m-%d}"
+  },
+
+  "custom/appmenu": {
+    "format": "Apps",
+    "on-click": "wofi --show drun",
+    "tooltip": false
+  },
+
+  "wireplumber": {
+    "format": "{volume}% {icon}",
+    "format-muted": "",
+    "on-click": "helvum",
+    "scroll-step": 0.2,
+    "format-icons": ["", "", ""]
   }
 
 }

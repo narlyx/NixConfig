@@ -17,10 +17,12 @@
     pkgs.vscode
 
     pkgs.waybar
+    pkgs.helvum
 
     pkgs.pavucontrol
     pkgs.firefox
     pkgs.spotify
+    pkgs.discord
     pkgs.bitwarden
     pkgs.android-studio
 
