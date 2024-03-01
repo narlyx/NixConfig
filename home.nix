@@ -17,10 +17,10 @@
     pkgs.vscode
 
     pkgs.waybar
-    pkgs.wofi
 
     pkgs.pavucontrol
     pkgs.firefox
+    pkgs.spotify
 
     pkgs.git
     pkgs.gh
@@ -35,7 +35,7 @@
       recursive = true;
     };
 
-    ".config/hypr/hyprland.conf".source = ./dotfiles/hypr/hyperland.conf;
+    ".config/hypr/hyprland.conf".source = ./dotfiles/hypr/hyprland.conf;
 
     ".config/waybar" = {
       source = ./dotfiles/waybar;
