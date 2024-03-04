@@ -22,20 +22,12 @@
         system = "x86_64-linux";
         modules = [
           ./hosts/acetylene/configuration.nix
-          ./modules/nixos/bootloader/grub/default.nix
-          ./modules/nixos/fonts/default.nix
-          ./modules/nixos/locale/default.nix
-          ./modules/nixos/network/default.nix
-          ./modules/nixos/shell/default.nix
-          ./modules/nixos/users/default.nix
-          ./modules/nixos/dm/greetd/default.nix
-          ./modules/nixos/wm/hyprland/default.nix
-          ./modules/nixos/audio/pipewire/default.nix
+          ./modules/nixos
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.narlyx = import ./home.nix;
+            home-manager.users.narlyx = import ./modules/home-manager;
           }
         ];
       };

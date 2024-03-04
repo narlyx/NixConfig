@@ -3,7 +3,7 @@
 {
   imports =
     [
-      ./apps/zsh
+      ./appbundles
     ];
   
   home.stateVersion = "22.11";
