@@ -6,11 +6,16 @@
 
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+
+    nix-darwin.url = "github:LnL7/nix-darwin";
+    nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = inputs@{ self, nixpkgs, home-manager, ... }: 
+  outputs = inputs@{ self, nixpkgs, nix-darwin, home-manager, ... }: 
     let
       pkgs = nixpkgs.legacyPackages."x86_64-linux";
+
+      
     in {
     nixosConfigurations = {
       acetylene = nixpkgs.lib.nixosSystem {
@@ -36,6 +41,13 @@
       };
 
     };
+
+    darwinConfigurations = {
+      arsenic = nix-darwin.lib.darwinSystem {
+        modules = [ ./hosts/arsenic/configuration.nix ];
+      };
+    };
+    darwinPackages = self.darwinConfigurations.arsenic.pkgs;
 
   };
 }
