@@ -8,3 +8,8 @@ alias cat="bat"
 
 PROMPT="%F{green}%n@%m %F{blue}%~ %F{white}> "
 RPROMPT="%F{green}%t"
+
+if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+  unset __ETC_PROFILE_NIX_SOURCED
+  . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+fi
