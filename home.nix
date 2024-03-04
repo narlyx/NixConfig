@@ -28,6 +28,7 @@
 
     pkgs.git
     pkgs.gh
+    pkgs.github-desktop
 
     pkgs.rustc
     pkgs.rustup
