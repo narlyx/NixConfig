@@ -28,6 +28,14 @@
 
     pkgs.git
     pkgs.gh
+
+    pkgs.rustc
+    pkgs.rustup
+    pkgs.alsa-lib
+    pkgs.fontconfig
+    pkgs.openssl
+    pkgs.zstd
+    pkgs.pkg-config
   ];
 
   home.file = {
