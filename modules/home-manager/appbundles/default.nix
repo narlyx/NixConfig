@@ -1,6 +1,21 @@
 { pkgs, ... }:
 
 let
+  desktopBundle = [
+    pkgs.firefox
+    pkgs.tor-browser
+    pkgs.bitwarden
+    pkgs.spotify
+    pkgs.discord
+    pkgs.github-desktop
+    pkgs.vscode
+    pkgs.android-studio
+  ];
+
+  languagesBundle = [
+    pkgs.python3
+  ];
+
 in {
   programs.zsh.enable = true;
   home.file.".zshrc".source = ../../../dotfiles/zsh/zshrc;
@@ -25,7 +40,7 @@ in {
 
 
 
-  home.packages = [ pkgs.firefox pkgs.tor-browser pkgs.bitwarden pkgs.spotify pkgs.discord pkgs.github-desktop pkgs.vscode pkgs.android-studio ];
+  home.packages = desktopBundle ++ languagesBundle ++ [  ];
 
 
 
