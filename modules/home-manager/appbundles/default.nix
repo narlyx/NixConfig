@@ -25,7 +25,7 @@ in {
 
 
 
-  home.packages = [ pkgs.firefox pkgs.bitwarden pkgs.spotify pkgs.discord pkgs.github-desktop pkgs.vscode pkgs.android-studio ];
+  home.packages = [ pkgs.firefox pkgs.tor-browser pkgs.bitwarden pkgs.spotify pkgs.discord pkgs.github-desktop pkgs.vscode pkgs.android-studio ];
 
 
 
@@ -34,6 +34,7 @@ in {
     source = ../../../dotfiles/waybar;
     recursive = true;
   };
+  home.file.".config/wofi/style.css".source = ../../../dotfiles/wofi/style.css;
   home.file.".config/kitty" = {
     source = ../../../dotfiles/kitty;
     recursive = true;
