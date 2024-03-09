@@ -12,8 +12,16 @@ let
     pkgs.android-studio
   ];
 
-  languagesBundle = [
+  programingBundle = [
     pkgs.python3
+
+    pkgs.cargo
+    pkgs.alsa-lib
+    pkgs.fontconfig
+    pkgs.openssl
+    pkgs.zstd
+    pkgs.pkg-config
+
   ];
 
 in {
@@ -42,7 +50,7 @@ in {
   };
 
 
-  home.packages = desktopBundle ++ languagesBundle ++ [  ];
+  home.packages = desktopBundle ++ programingBundle ++ [ pkgs.vlc pkgs.floorp ];
 
 
   # Other Dotfiles

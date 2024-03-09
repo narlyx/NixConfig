@@ -19,5 +19,6 @@
       ./dm/greetd
       ./wm/hyprland
       ./audio/pipewire
+      ./printing
     ];
 }
